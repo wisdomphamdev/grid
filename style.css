@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    height: 50px;
+    width: 60px;
+    border:1px solid #000;
+}
+/* .a{
+    grid-area: present;
+}
+.b{
+    grid-area: tien;
+}
+.c{
+    grid-area: kien ;
+}
+.d{
+    grid-area: di;
+}
+.e{
+    grid-area: khoa;
+} */
+.container{
+    width: 1000px;
+    height: 300px;
+    border:2px solid #000;
+    margin: 10px;
+    display:grid;
+    /* grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:repeat(3,1fr); */
+    /* shortcut */
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    
+
+    /* grid-template-columns:[first] 100px [line2] 100px [end] 100px;
+    grid-template-rows:[row-start] 100px [row-2] 100px  [row-end] 100px; */
+
+    
+    /* grid-template-areas:  
+        "present present present tien"
+        "present present present di"
+        "present present present kien"
+        "present present present khoa"
+    ; */
+    /* shortcut */
+    /* grid-template:  
+        "present present present tien"
+        "present present present di"
+        "present present present kien"
+        "present present present khoa"
+    ; */
+    
+
+    /* standard */
+    gap: 10px;
+    /* old */
+    /* grid-gap:10px; */
+    /* gap:10px 20px; */
+    /* standard */
+    /* row-gap: 10px;
+    column-gap: 20px; */
+
+    /* old */
+    /* grid-row-gap: 10px;
+    grid-column-gap: 20px; */
+
+    /* justify-items: stretch; */
+    /* justify-items: end; */
+    /* justify-items: start; */
+    /* justify-items: center; */
+
+    /* align-items: stretch; */
+    /* align-items: end; */
+    /* align-items: start; */
+    /* align-items: center; */
+
+    /* combine align-items and justify-items  */
+    /* place-items:center ; */
+    /* place-items: start; */
+    /* place-items: end; */
+
+    justify-content: space-between;
+
+
+    
+
+
+}
